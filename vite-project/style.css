@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat&family=Poppins:wght@300&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(238, 204, 174);
+    background: linear-gradient(135deg, rgba(238, 204, 174, 1) 14%, rgba(229, 148, 233, 1) 100%);
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    /* border: 3px solid black; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center ; */
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    padding: 1rem;
+}
+
+.container .heading {
+    /* border: 2px solid blue; */
+    color: #d400df;
+    width: 100%;
+    text-align: center;
+    font-size: 2.3rem;
+    font-weight: bolder;
+}
+
+.container .contents {
+    /* border: 2px solid green; */
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.container .contents div {
+    /* border: 2px solid red; */
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container .contents .data form {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid pink; */
+    justify-content: center;
+    align-items: center;
+    padding: .5rem 0rem .5rem 0rem;
+}
+
+@media (max-width: 900px) {
+    .container .contents .data form {
+        width: 100%;
+    }
+
+    .container .contents .data form input {
+        width: 90%;
+        margin: .5rem 0rem 1rem 0rem;
+    }
+    .output-div img {
+        width: 50%;
+    }
+}
+
+@media (max-width: 400px) {
+    .container .heading {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 950px) {
+    .container .contents {
+        flex-direction: column;
+        margin-top: .5rem;
+    }
+
+    .container .contents div {
+        width: 100%;
+        /* height: 50%; */
+    }
+    .output-div img {
+        margin-top:2rem;
+    }
+}
+
+label {
+    font-size: 1.5rem;
+}
+
+input {
+    width: 70%;
+    padding: .5rem;
+    font-size: 1.3rem;
+    letter-spacing: 4px;
+    margin: .5rem 0rem 2rem 0rem;
+    border: 0px;
+    border-radius: .5rem;
+}
+
+button {
+    padding: .5rem 1rem;
+    font-size: 1.3rem;
+    border: 0px;
+    border-radius: .5rem;
+}
+
+.output {
+    border-radius: 1rem;
+    /* border: 1px solid; */
+    height: 30%;
+    width: 60%;
+    padding: 1rem;
+    background-color: rgba(231, 191, 191, 0.296);
+}
+
+.output-div img {
+    width: 90%;
+}
+.off{
+    display: none;
+}
