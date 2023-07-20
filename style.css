@@ -141,6 +141,7 @@ button {
 
 
 .sol {
+    padding: .5rem;
     /* display: inline-block; */
     /* display: none; */
     visibility: hidden;
