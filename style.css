@@ -159,7 +159,7 @@ button {
 
 .sol h1 {
     font-weight: bolder;
-    margin-bottom: .5rem
+    margin: .5rem
 }
 
 @media(max-width:1100px) {
