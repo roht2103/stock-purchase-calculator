@@ -14,6 +14,11 @@ let li1=document.querySelector(".li1")
 let li2=document.querySelector(".li2")
 let li3=document.querySelector(".li3")
 let li4=document.querySelector(".li4")
+let clearBtn=document.getElementById("clearBtn")
+
+clearBtn.addEventListener("click",()=>{
+    form.reset();
+})
 
 form.addEventListener("submit",formHandeller);
 
