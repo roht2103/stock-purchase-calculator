@@ -111,17 +111,21 @@ function calculateProfitAndLoss(initial, quantity, current) {
       img5.classList.add("off");
       img6.classList.add("off");
     }
-  } else {
+  } else if(current==initial) {
+    let profit = current * quantity - totalAmountInvested;
+    let profitPercentage = (profit / totalAmountInvested) * 100;
+    let amount = current * quantity;
     img1.classList.add("off");
     img2.classList.add("off");
     img3.classList.remove("off");
     img4.classList.add("off");
     img5.classList.add("off");
     img6.classList.add("off");
+
     solH1.innerHTML = "No pain no gain,No gain no pain";
     li1.innerHTML = "Total Amount Invested: " + totalAmountInvested;
-    li2.innerHTML = "Profit gained: " + profit;
-    li3.innerHTML = "Profit Percentage: " + profitPercentage + "%";
-    li4.innerHTML = "Amount: " + amount;
+    li2.innerHTML="profit: "+profit;
+    li3.innerHTML="profit Percentage: "+profitPercentage+"%";
+    li4.innerHTML="amount: "+amount
   }
 }
