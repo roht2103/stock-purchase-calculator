@@ -63,11 +63,12 @@ body {
     .container .contents .data form {
         width: 100%;
     }
-    
+
     .container .contents .data form input {
         width: 90%;
         margin: .5rem 0rem 1rem 0rem;
     }
+
     .output-div img {
         width: 50%;
     }
@@ -84,13 +85,14 @@ body {
         flex-direction: column;
         margin-top: .5rem;
     }
-    
+
     .container .contents div {
         width: 100%;
         /* height: 50%; */
     }
+
     .output-div img {
-        margin-top:2rem;
+        margin-top: 2rem;
     }
 }
 
@@ -116,7 +118,7 @@ button {
     border-radius: .5rem;
 }
 
-#clearBtn{
+#clearBtn {
     visibility: hidden;
 }
 
@@ -132,12 +134,13 @@ button {
 .output-div img {
     width: 100%;
 }
-.off{
+
+.off {
     display: none;
 }
 
 
-.sol{
+.sol {
     /* display: inline-block; */
     /* display: none; */
     visibility: hidden;
@@ -146,33 +149,44 @@ button {
     align-items: center;
     justify-content: center;
     position: absolute;
-    background-color: rgba(240, 255, 255, 0.642);
+    background-color: rgba(253, 248, 220, 0.404);
     height: 30%;
     width: 35%;
+    /* font-weight: bold; */
     border-radius: 1rem;
 }
-@media(max-width:1100px){
-    .sol{
+
+.sol h1 {
+    font-weight: bolder;
+    margin-bottom: .5rem
+}
+
+@media(max-width:1100px) {
+    .sol {
         width: 40%;
     }
 }
-@media(max-width:900px){
-    .sol{
+
+@media(max-width:900px) {
+    .sol {
         width: 50%;
     }
 }
-@media(max-width:800px){
-    .sol{
+
+@media(max-width:800px) {
+    .sol {
         width: 70%;
     }
 }
-@media(max-width:495px){
-    .sol{
+
+@media(max-width:495px) {
+    .sol {
         width: 90%;
     }
 }
-@media(max-width:420px){
-    .sol{
+
+@media(max-width:420px) {
+    .sol {
         width: 95%;
     }
 }
