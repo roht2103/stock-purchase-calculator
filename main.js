@@ -20,9 +20,12 @@ clearBtn.addEventListener("click",()=>{
     form.reset();
 })
 
+
 form.addEventListener("submit",formHandeller);
 
-
+form.addEventListener("change",()=>{
+        clearBtn.style.visibility="visible"
+})
 
 function formHandeller(e){
     e.preventDefault();

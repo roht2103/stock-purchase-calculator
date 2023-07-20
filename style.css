@@ -108,10 +108,15 @@ input {
 }
 
 button {
+    cursor: pointer;
     padding: .5rem 1rem;
     font-size: 1.3rem;
     border: 0px;
     border-radius: .5rem;
+}
+
+#clearBtn{
+    visibility: hidden;
 }
 
 .output {
